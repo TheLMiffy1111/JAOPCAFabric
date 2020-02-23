@@ -1,0 +1,37 @@
+{
+    "schemaVersion": 1,
+    "id": "jaopca",
+    "version": "${version}",
+    "name": "JAOPCA",
+    "description": "A mod that aims to make mods with ore processing support more ores.",
+    "authors": [
+        "TheLMiffy1111"
+    ],
+    "contact": {
+        "homepage": "https://minecraft.curseforge.com/projects/jaopcaf",
+        "sources": "https://github.com/TheLMiffy1111/JAOPCAF",
+        "issues": "https://github.com/TheLMiffy1111/JAOPCAF/issues"
+    },
+    "license": "MIT",
+    "icon": "assets/jaopca/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "thelm.jaopca.JAOPCA::INSTANCE"
+        ],
+        "client": [
+            "thelm.jaopca.client.JAOPCAClient::INSTANCE"
+        ],
+        "jaopca": [
+            "thelm.jaopca.modules.DefaultModuleListSupplier"
+        ]
+    },
+    "mixins": [
+        "jaopca.mixins.json",
+        "jaopca.client.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.6.0",
+        "fabric": "*"
+    }
+}

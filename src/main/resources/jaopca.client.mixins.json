@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "package": "thelm.jaopca.client.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "client": [
+        "BakedQuadAccessor",
+        "BakedModelManagerMixin",
+        "SpriteMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
